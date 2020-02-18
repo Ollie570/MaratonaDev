@@ -1,0 +1,20 @@
+/* Alinhamentos, espaçamentos, larguras e alturas */
+
+header, main, footer {
+    text-align: center;
+}
+
+/*fr = fração de divisão por grids*/
+section.doadores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header, section.form, main {
+    margin-bottom: 70px;
+}
