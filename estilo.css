@@ -1,5 +1,9 @@
 /* Alinhamentos, espaçamentos, larguras e alturas */
 
+html, body {
+    margin: 0;
+}
+
 header, main, footer {
     text-align: center;
 }
@@ -15,6 +19,16 @@ section.form {
     grid-template-columns: 1fr 1fr;
 }
 
+/*Espaçamentos com margem*/
 header, section.form, main {
-    margin-bottom: 70px;
+    /*O margin processa os elementos de topo, 
+    direita, rodapé e esquerda nessa ordem, 
+    então, é permitido configurar os 4 no mesmo 
+    margin*/
+    margin: 0 auto 70px auto;
+    /*Limites dos elementos na página*/
+    width: 90%;
+    max-width: 500px;
 }
+    
+
