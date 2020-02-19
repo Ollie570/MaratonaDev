@@ -16,6 +16,7 @@
     <title>Doe sangue!</title>
 
     <link rel = "stylesheet" href = "estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -25,7 +26,10 @@
     no body-->
     <header>
 
-        <h1>DOE</h1>
+        <img 
+        class = "logo"
+        src = "logo.png" 
+        alt = "Imagem do DOE">
         <h2>A sua doação importa!</h2>
         <!--Tag p = parágrafo-->
         <p>Salve até 3 vidas com 1 doação</p>
@@ -37,7 +41,7 @@
     </header>
 
     <!--class form = formulário-->
-    <section class = "form">
+    <section class = "form hide">
         <h2>Entre na lista de doadores</h2>
         <form action="/">
             <input type = "text" name = "name" placeholder = "Nome completo">
@@ -51,7 +55,9 @@
 
     <main>
 
-        <h2>Últimos doadores</h2>
+        <!--A tag span serve para selecionar 
+        um elemento específico no texto-->
+        <h2>Últimos <span>doadores</span></h2>
 
         <!--Tag section = contém atributos-->
         <section class = "doadores">
@@ -78,6 +84,8 @@
     </main>
 
     <footer>Com ❤️ RocketSeat</footer>
+
+    <script src = "script.js"></script>
 
 </body>
 
