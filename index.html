@@ -43,12 +43,12 @@
     <!--class form = formulário-->
     <section class = "form hide">
         <h2>Entre na lista de doadores</h2>
-        <form action="/">
+        <form action="/" method = "POST">
             <input type = "text" name = "name" placeholder = "Nome completo">
             <input type = "text" name = "email" placeholder = "Email">
             <input type = "text" name = "blood" placeholder = "Tipo sanguíneo">
 
-            <button>Quero ajudar!</button>
+            <button>Doar</button>
         </form>
 
     </section>
@@ -62,22 +62,14 @@
         <!--Tag section = contém atributos-->
         <section class = "doadores">
 
+            {% for doador in doadores %}
+
             <div class = "doador">
-                <div class = "sangue">AB+</div>
-                <p>Diego</p>
+                <div class = "sangue">{{doador.sangue}}</div>
+                <p>{{doador.name}}</p>
             </div>
-            <div class = "doador">
-                <div class = "sangue">B+</div>
-                <p>Paulo</p>
-            </div>
-             <div class = "doador">
-                <div class = "sangue">A+</div>
-                <p>Afonso</p>
-             </div>
-            <div class = "doador">
-                <div class = "sangue">O+</div>
-                <p>Cláudia</p>
-            </div>
+
+            {% endfor %}
 
         </section>
 
